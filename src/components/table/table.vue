@@ -95,10 +95,12 @@ const filteredRecords = computed(() => {
 
     if (data.sortBy) {
       const sorted = filtered.sort((a: any, b: any) => {
-        const valueA = a[key];
-        const valueB = b[key];
+        let valueA = a[key];
+        let valueB = b[key];
 
         if (numbers.includes(key)) {
+          valueA = valueA === 'unknown' ? '0' : valueA.replace(',', '');
+          valueB = valueB === 'unknown' ? '0' : valueB.replace(',', '');
           return (Number(valueA) - Number(valueB)) * order;
         } else if (typeof valueA === 'string' && typeof valueB === 'string') {
           return valueA.localeCompare(valueB) * order;
