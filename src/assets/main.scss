@@ -1,0 +1,16 @@
+@import './base.scss';
+
+@font-face {
+  font-family: 'StarWarsFont';
+  src: url('./fonts/StarWars/star_jedi/stjelogo/Stjldbl1.ttf') format('truetype');
+  /* Add additional font formats for compatibility */
+}
+
+
+#app {
+  @media screen and (max-width: 1024px) {
+    padding: 0 1em;
+  }
+}
+
+
