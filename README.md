@@ -31,9 +31,9 @@ Your mission, should you choose to accept it, is to create a one-page applicatio
 - Webpack
 - VueJs and vue router are a plus but not necessary. Use the JS framework you like, e.g., React, Angular, Vue, etc.
 
-## Getting Started
-
 ## Project Setup
+
+Node version: 21.1.0
 
 ```sh
 pnpm install
